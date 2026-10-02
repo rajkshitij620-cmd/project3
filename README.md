@@ -49,23 +49,22 @@ Snip comes with pre-seeded demo accounts and realistic sample salons:
 
 ---
 
-## 🏃 Quick Start Guide
+## 🏃 Quick Start Guide (Single Command)
 
-### 1. Start the Backend API (Port 5001)
+### 1. Install all dependencies (Root, Backend & Frontend)
 ```bash
-cd backend
-npm install
-npm start
+npm run install:all
 ```
-*The server will start on `http://localhost:5001/api`. If no external `MONGO_URI` is provided, an embedded in-memory MongoDB instance will automatically initialize and seed rich sample data.*
+*(or run `npm install` in root, backend, and frontend)*
 
-### 2. Start the Frontend (Port 5173)
+### 2. Run both Backend & Frontend together with 1 Command:
 ```bash
-cd frontend
-npm install
 npm run dev
 ```
-*Open `http://localhost:5173` in your browser.*
+
+- **Frontend:** [http://localhost:5173](http://localhost:5173)
+- **Backend API:** [http://localhost:5001/api](http://localhost:5001/api)
+- **Database:** Auto-initializes embedded in-memory MongoDB and seeds demo data automatically. No manual MongoDB setup required!
 
 ---
 
